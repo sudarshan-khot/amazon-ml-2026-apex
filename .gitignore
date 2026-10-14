@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------------------------
+# Business Entity Resolution - keep only source code and documentation in the repository.
+# Data, generated artifacts and results are large (tens of GB) and are recreated by the pipeline.
+# ---------------------------------------------------------------------------------------------
+
+# challenge data (2.4 GB; redistribution is not allowed by the challenge rules)
+dataset/
+
+# everything the pipeline generates: cleaned data, features, models, logs (~44 GB)
+code/business_entity_resolution/artifacts/
+
+# results and the submission package (hundreds of MB)
+output/
+output_2/
+output_*/
+submission/
+*.zip
+
+# large data / model files wherever they appear
+*.tsv
+*.csv
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.json.gz
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# virtual environments / secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+__MACOSX/

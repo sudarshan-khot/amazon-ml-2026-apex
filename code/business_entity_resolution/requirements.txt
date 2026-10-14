@@ -1,0 +1,10 @@
+# Python 3.12.10 (tested on Windows 11; the code is plain Python and also runs on Linux)
+# All libraries are open source with permissive licenses; no external data / API is used.
+numpy==2.4.4                  # BSD-3-Clause
+pandas==3.0.2                 # BSD-3-Clause
+pyarrow==25.0.1               # Apache-2.0
+rapidfuzz==3.14.6             # MIT
+indic-transliteration==2.3.82 # MIT   (offline Indic script -> Latin transliteration)
+scikit-learn==1.8.0           # BSD-3-Clause  (blocking re-ranker)
+xgboost==3.4.1                # Apache-2.0    (matching model; GPU via CUDA, or --device cpu)
+psutil==7.2.2                 # BSD-3-Clause  (auto worker count)
